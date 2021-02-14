@@ -1,0 +1,10 @@
+.picture1{
+    size: 40vh;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+  }

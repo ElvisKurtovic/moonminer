@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <header>
+        <div class="row bg-dark">
+            <div class="col-12 text-center text-light">
+                <h1>Moon Miner</h1>
+            </div>
+        </div>
+
+    </header>
+    <div class="container-fluid text-center">
+        <div class="row text-center bg-dark">
+            <div class="col-12 text-center">
+                <img class="btn center" src="moon.png" alt="moon" onclick="mine()">
+                <div class="row mx-auto text-center">
+                    <h3 class="text-light mx-auto">Cheese: <span id="moonImg"></span></h3>
+                </div>
+            </div>
+
+        </div>
+        <div class="row text-center">
+            <div class="col-4 border rounded mt-2 py-3" id="inventory">
+                <h5>Inventory</h5>
+                <p>Pick Axes Equipped: <span id="pickAxesequipped"></span></p>
+                <p>Jack Hammers Equipped: <span id="jackHammersequipped"></span></p>
+                <p>Dig Bois Equipped: <span id="digBoisequipped"></span></p>
+                <p>Mice Equipped: <span id="miceEquipped"></span></p>
+            </div>
+            <div class="col-4 my-auto">
+                <button id="pickAxe" type="button" class="btn btn-primary" onclick="buyPickaxe()">Pick Axe</button>
+                <button id="jackHammer" type="button" class="btn btn-primary" onclick="buyJackhammer()">Jack
+                    Hammer</button>
+                <button id="digBoi" type="button" class="btn btn-primary" onclick="buyDigboi()">Dig Boi</button>
+            </div>
+            <div class="col-4 border rounded mt-2 py-3" id="store">
+                <h5>Store</h5>
+                <p>Cost(50) Pick Axe Mine Increase By: 2</p>
+                <p>Cost(100) Jack Hammer Mine Increase By: 4</p>
+                <p>Cost(200) Dig Boi Mine Increase By: 10</p>
+                <h6>Auto Upgrades</h6>
+                <p>Cost(0) Mice Mine Increase By: 5</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</body>
+
+</html>
